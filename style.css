@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Alientz';
+    src: url('alientz_serif.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    background-color: #e7daff10;
+    color: #183EAF;
+
+}
+
+p,
+li {
+    font: 1em sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 2rem;
+}
+
+body {
+    padding-top: 50px;
+    /* Adjust this value based on the height of your header */
+}
+
+div {
+    border: 2px #183EAF;
+    padding: 10px;
+}
+
+#page-container {
+    margin: 30px;
+    font: sans-serif;
+
+}
+
+.portrait-img {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 14rem;
+}
+
+.icon {
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+}
+
+#icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Stacked on mobile */
+@media (max-width: 768px) {
+    #about-content {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #resume-content {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .resume-section {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    div {
+        margin: 0;
+        padding: 0%;
+    }
+
+    #icon-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    margin-right: 14rem;
+}
+
+#resume-content {
+
+    margin-left: 10rem;
+    margin-right: 14rem;
+    border-color: red;
+}
+
+
+#scholarship {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-right: 1rem;
+}
+
+#scholarship img {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+    box-shadow: none;
+}
+
+#utoronto-img {
+    padding: 0;
+    width: 80px;
+    height: 80px;
+}
+
+#uhnder-img {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+#degree-container {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+    max-width: 570px;
+
+}
+
+.skill-container {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+#degree-container h2,
+#degree-container h3,
+#work-container h2,
+#work-container h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.project-card {
+    
+}
+
+#degree-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#course-container  {
+    flex: 1;
+    min-width: 200;
+    max-width: 400px;
+    margin-left: 1rem;
+}
+
+#course-container h3, 
+#course-container li {
+    color: #183EAF;
+}
+
+#contact-content {
+    margin-left: 10rem;
+    margin-right: 14rem;
+    
+}
+
+
+#first-name {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 70px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 1px;
+}
+
+#last-name {
+    font-family: 'Alientz';
+    font-size: 50px;
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.rectangle {
+    height: 0.5rem;
+    width: 90%;
+    background-color: #183EAF;
+    margin: 0;
+    padding: 0;
+}
