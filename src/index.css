@@ -232,7 +232,7 @@ div {
     transition: all 0.5s;
 }
 
-@media(preferes-reduced-motion) {
+@media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
