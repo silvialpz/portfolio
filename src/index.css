@@ -64,6 +64,9 @@ div {
     justify-content: flex-end;
 }
 
+section {
+    display: flex;
+}
 
 /* Stacked on mobile */
 @media (max-width: 768px) {
@@ -276,4 +279,9 @@ div {
 
 .icon:nth-child(3) {
     transition-delay: 500ms; /* Start after 1.5 seconds */
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
 }
