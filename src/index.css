@@ -43,7 +43,7 @@ div {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#about-content {
+.content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,10 +64,33 @@ div {
     justify-content: flex-end;
 }
 
+.resume-section {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 2px;
+    padding-top: 2rem
+}
+
+
+.project-card {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5%;
+    margin: 1rem;
+    padding: 2rem;
+    padding-left: 80px;
+}
+
+.skill-container {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
 
 /* Stacked on mobile */
 @media (max-width: 768px) {
-    #about-content {
+    .content {
         flex-direction: column;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -79,16 +102,17 @@ div {
         margin-right: 1rem;
     }
 
-    .resume-section {
-        flex-direction: column;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
 
     div {
         margin: 0;
         padding: 0%;
+    }
+
+    .container,
+    .project-card {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 10px;
     }
 
     #icon-container {
@@ -170,7 +194,9 @@ div {
 #degree-container h2,
 #degree-container h3,
 #work-container h2,
-#work-container h3 {
+#work-container h3,
+.project-card h2,
+.project-card h3 {
     margin: 0;
     padding: 0;
 }
