@@ -12,229 +12,87 @@
         <a href="contact.html">Resume</a>
         <a href="projects.html">Contact</a>
     </header> -->
+
+    
     <div id="page-container">
         <main>
-            <div class="content">
-                <div class="portrait-frame hidden">
-                    <img class="portrait-img" src="portrait.jpg">
-                </div>
-                <div class="personal-summary hidden">
-                    <div>
-                        <h1 id="first-name">silvia</h1>
-                        <h1 id="last-name"> LOPEZ</h1>
-                        <div class="rectangle"></div>
+            <section >
+                <div id="about-content">
+                    <div class="portrait-frame hidden">
+                        <img class="portrait-img" src="portrait.jpg">
                     </div>
-                    <div>
-                        <p>I am a soon-to-be computer engineering graduate from the University of Toronto and a Pearson
-                            Scholar. I am a very visual thinker and artist, I draw and paint
-                            which is why I have an affinity for designing visually appealing user interfaces but beyond
-                            that I am interested in how the tools we use work on a lower level. The university courses
-                            in computer graphics and computer architecture I’ve taken have inspired my career goal,
-                            which is to be at the intersection of art and technology as a graphics engineer.</p>
-                    </div>
-                </div>
-                <br />
-                <div id="icon-container">
-                    <a href="https://www.linkedin.com/in/silvia-lopez-1a9468204/" class="icon hidden">
-                        <img class="icon-img" src="linkedin.png">
-                    </a>
-                    <a href="https://github.com/silvialpz" class="icon hidden">
-                        <img class="icon-img" src="github.png">
-                    </a>
-                    <a href="" class="icon hidden">
-                        <img class="icon-img" src="downloading.png">
-                    </a>
-                </div>
-
-            </div>
-
-            <br />
-
-
-            <div>
-                <p class="resume-section">EDUCATION</p>
-            </div>
-
-            <div class="content">
-                <div id="degree-container">
-                    <div id="degree-title">
-                        <img id="utoronto-img" src="Utoronto_coa.svg.png" alt="">
+                    <div class="personal-summary hidden">
                         <div>
-                            <h2> BASc in Computer Engineering</h2>
-                            <h3> University of Toronto </h3>
-                            <li> Minored in Artificial Intelligence </li>
-                            <li> Completed a year-long PEY co-op internship (2022-2023)</li>
-                            <div id="scholarship">
-                                <img src="hat.png" class="icon">
-                                <p>Awarded 2019 Lester B. Pearson International Scholarship </li>
-                            </div>
+                            <h1 id="first-name">Silvia</h1>
+                            <h1 id="last-name"> LOPEZ</h1>
+                            <div class="rectangle"></div>
+                        </div>
+                        <div>
+                            <p>I am a soon-to-be computer engineering graduate from the University of Toronto and a
+                                Pearson
+                                Scholar. I am a very visual thinker and I draw and paint. The university
+                                courses
+                                in computer graphics and computer architecture I’ve taken have inspired my career goal,
+                                which is to be at the intersection of art and technology.</p>
                         </div>
                     </div>
-                </div>
-                <div id="course-container">
-                    <h3>Courses</h3>
-                    <li class="course">Computer Graphics</li>
-                    <li class="course">Computer Architecture</li>
-                    <li class="course">Compilers & Interpreters</li>
-                    <li class="course">Artificial Intelligence</li>
-                    <li class="course">Applied Fundamentals of Deep Learning</li>
-                </div>
-            </div>
-
-            <div>
-                <p class="resume-section">EXPERIENCE</p>
-            </div>
-
-            <div class="content">
-                <div id="work-container">
-                    <div id="degree-title">
-                        <img id="uhnder-img" src="uhnder_inc_logo.jpeg" alt="">
-                        <div>
-                            <h2> Software Engineering Intern</h2>
-                            <h3> Uhnder Inc. CA </h3>
-                            <li>Implemented a design tool in Python for radar antennas which also automated the
-                                task of generating product documentation and figures</li>
-                            <li>Improved the efficiency of the design workflow.</li>
-                            <li>Created all technical documentation, ensuring clear and detailed guidelines for future
-                                users.
-                            </li>
-                            <li>Architected a custom 3D visualization solution to represent simulation data using
-                                Python within the Robot Operating System (ROS) framework and Rviz visualizer.</li>
-                            <li>Demonstrated rapid learning and adaptability by quickly acquiring proficiency in the ROS
-                                framework</li>
-                            <li>Collaborated with multiple teams across the company to ensure alignment and integration
-                                with other project components.</li>
-                            <li>Set a project timeline and successfully delivered the tool on schedule</li>
-                        </div>
+                    <br />
+                    <div id="icon-container">
+                        <a href="https://www.linkedin.com/in/silvia-lopez-1a9468204/" class="icon hidden">
+                            <img class="icon-img" src="linkedin.png">
+                        </a>
+                        <a href="https://github.com/silvialpz" class="icon hidden">
+                            <img class="icon-img" src="github.png">
+                        </a>
+                        <a href="Resume.pdf" download class="icon hidden">
+                            <img class="icon-img" src="downloading.png">
+                        </a>
                     </div>
+
                 </div>
+            </section>
+              
+                <script>
+                  function switchImage(element) {
+                    const img = element.querySelector('img');
+                    const sketch = img.getAttribute('data-sketch');
+              
+                    if (img.getAttribute('src') !== sketch) {
+                      img.src = sketch; // Switch to the sketch image
+                    } else {
+                      img.src = sketch.replace("_sketch", ""); // Switch back to the finished drawing
+                    }
+                  }
+                </script>
+        </main>
+
+        <h1>Gallery</h1>
+        <p><i>Some of my drawings I would like to share</i></p>
+
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="switchImage(this)">
+              <img src="coco.jpeg" alt="Finished Drawing 1" data-sketch="coco_sketch.jpeg">
             </div>
-
-            <div class="content">
-                <div class="project-card">
-                    <h2>CGRA Data Flow Graph Visualizer</h2>
-                    <h3>Research Project</h3>
-                    <ul>
-                        <li>Developing a GUI utilizing the SFML graphics library on <strong>C++</strong> to visualize a
-                            data flow graph
-                            and its congestions on a Course Grain Reprogrammable Array (CGRA).</li>
-                        <li>Refactored existing code into a modular Model-View-Controller (MVC) system, improving
-                            maintainability and scalability.</li>
-                        <li>Engaging in regular feedback sessions with a master's student to accurately represent
-                            complex data flow and congestion information within the GUI.</li>
-                    </ul>
-                </div>
+            <div class="gallery-item" onclick="switchImage(this)">
+              <img src="candle.jpeg" alt="Finished Drawing 2" data-sketch="candle_sketch.jpeg">
             </div>
-
-            <div class="content">
-                <div class="project-card">
-                    <h2>CodeBuddy VS Code Extension </h2>
-                    <h3>Capstone Project</h3>
-                    <ul>
-                        <li>Built a programming tutor with the goal of helping novice C programmers learn core coding
-                            concepts. The tool utilizes the OpenAI API and will become available as a VSCode Extension.
-                        </li>
-                        <li>Developed the front end of the user-interface with <strong>HTML, CSS, and
-                                JavaScript</strong>.</li>
-                        <li>Presented organized status updates to project supervisors, ensuring clear communication and
-                            alignment on project milestones and objectives.</li>
-                        <li>Continuing the project after the end of the capstone course to test it on students in the
-                            future.</li>
-                    </ul>
-                </div>
+            <div class="gallery-item" onclick="switchImage(this)">
+              <img src="merendon.jpeg" alt="Finished Drawing 3" data-sketch="merendon_sketch.jpeg">
             </div>
-
-            <div class="content">
-                <div class="project-card">
-                    <h2>Interactive Sketch Clustering</h2>
-                    <h3>Research Project</h3>
-                    <ul>
-                        <li>Collaborated with a postdoc on extending and enhancing an existing stroke clustering
-                            algorithm.</li>
-                        <li>Implemented a feature to handle incremental inputs in <strong>C++</strong>, allowing the
-                            system to process and incorporate one sketch at a time, rather than requiring the entire
-                            drawing at once.</li>
-                        <li>Analyzed experimental data rigorously and recognized early indicators of the project's
-                            limitations. Despite not achieving the anticipated results, the project allowed me to gain
-                            experience in the area of sketch processing.</li>
-                    </ul>
-                </div>
+            <div class="gallery-item" onclick="switchImage(this)">
+              <img src="window.jpeg" alt="Finished Drawing 4" data-sketch="window_sketch.jpeg">
             </div>
-
-
-            <div>
-                <p class="resume-section">SKILLS</p>
+            <div class="gallery-item" onclick="switchImage(this)">
+                <img src="indura.jpeg" alt="Finished Drawing 4" data-sketch="indura_sketch.jpeg">
             </div>
-
-            <div class="content">
-                <div class="skill-container">
-
-                    <p>Languages</p>
-                    <li>C/C++</li>
-                    <li>Python</li>
-                    <li>JavaScript, TypeScript</li>
-                </div>
-                <div class="skill-container">
-                    <p>Web Development</p>
-                    <li>HTML, CSS</li>
-                    <li>Node.js</li>
-                    <li>React</li>
-                </div>
-                <div class="skill-container">
-                    <p>Tools and Platforms</p>
-                    <li>Linux</li>
-                    <li>Git</li>
-                    <li>Mercurial</li>
-                    <li>Visual Studio Code</li>
-                </div>
-            </div>
-
-            <div class="content">
-                <div>
-                    <h3>Competencies</h3>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Organization</li>
-                        <li>Collaboration</li>
-                        <li>Rapid Learning</li>
-                        <li>Problem Solving</li>
-                        <li>Time Management</li>
-                        <li>Adaptability</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <p class="resume-section">VOLUNTEERING</p>
-            </div>
-
-            <div class="content">
-                <div>
-                    <li><strong>Team Leader</strong> for 2024 SIGGRAPH Conference: Coordinated student volunteer
-                        activities for
-                        over 200
-                        students and provided on-
-                        the-ground support for conference attendees and presenters</li>
-                    <li><strong>Student Volunteer</strong> for 2023 SIGGRAPH Conference : Provided general assistance for
-                        attendees and
-                        helped contributors demo
-                        technologies by providing support with Virtual Reality headset setup</li>
-                    <li><strong>Graphic Design Lead</strong> for 2022 Ontario Engineering Competition: In charge of
-                        designing
-                        logo,
-                        layout, printing, and theme of
-                        marketing materials.</li>
-                </div>
-
-            </div>
+            <!-- Add more gallery items as needed -->
+          </div>
     </div>
-    </main>
-    </div>
-    <footer>
+    <!-- <footer>
         <div>
             <p>Copyright 2024 by Silvia Lopez</p>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
