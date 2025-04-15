@@ -2,98 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silvia Lopez | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvia Lopez Portfolio</title>
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <header>
-        <a href="about.html">About</a>
-        <a href="contact.html">Resume</a>
-        <a href="projects.html">Contact</a>
-    </header> -->
-
-    
-    <div id="page-container">
-        <main>
-            <section >
-                <div id="about-content">
-                    <div class="portrait-frame hidden">
-                        <img class="portrait-img" src="portrait.jpg">
-                    </div>
-                    <div class="personal-summary hidden">
-                        <div>
-                            <h1 id="first-name">Silvia</h1>
-                            <h1 id="last-name"> LOPEZ</h1>
-                            <div class="rectangle"></div>
-                        </div>
-                        <div>
-                            <p>I am a soon-to-be computer engineering graduate from the University of Toronto and a
-                                Pearson
-                                Scholar. I am a very visual thinker and I draw and paint. The university
-                                courses
-                                in computer graphics and computer architecture I’ve taken have inspired my career goal,
-                                which is to be at the intersection of art and technology.</p>
-                        </div>
-                    </div>
-                    <br />
-                    <div id="icon-container">
-                        <a href="https://www.linkedin.com/in/silvia-lopez-1a9468204/" class="icon hidden">
-                            <img class="icon-img" src="linkedin.png">
-                        </a>
-                        <a href="https://github.com/silvialpz" class="icon hidden">
-                            <img class="icon-img" src="github.png">
-                        </a>
-                        <a href="Resume.pdf" download class="icon hidden">
-                            <img class="icon-img" src="downloading.png">
-                        </a>
-                    </div>
-
-                </div>
-            </section>
-              
-                <script>
-                  function switchImage(element) {
-                    const img = element.querySelector('img');
-                    const sketch = img.getAttribute('data-sketch');
-              
-                    if (img.getAttribute('src') !== sketch) {
-                      img.src = sketch; // Switch to the sketch image
-                    } else {
-                      img.src = sketch.replace("_sketch", ""); // Switch back to the finished drawing
-                    }
-                  }
-                </script>
-        </main>
-
-        <h1>Gallery</h1>
-        <p><i>Some of my drawings I would like to share</i></p>
-
-        <div class="gallery-container">
-            <div class="gallery-item" onclick="switchImage(this)">
-              <img src="coco.jpeg" alt="Finished Drawing 1" data-sketch="coco_sketch.jpeg">
-            </div>
-            <div class="gallery-item" onclick="switchImage(this)">
-              <img src="candle.jpeg" alt="Finished Drawing 2" data-sketch="candle_sketch.jpeg">
-            </div>
-            <div class="gallery-item" onclick="switchImage(this)">
-              <img src="merendon.jpeg" alt="Finished Drawing 3" data-sketch="merendon_sketch.jpeg">
-            </div>
-            <div class="gallery-item" onclick="switchImage(this)">
-              <img src="window.jpeg" alt="Finished Drawing 4" data-sketch="window_sketch.jpeg">
-            </div>
-            <div class="gallery-item" onclick="switchImage(this)">
-                <img src="indura.jpeg" alt="Finished Drawing 4" data-sketch="indura_sketch.jpeg">
-            </div>
-            <!-- Add more gallery items as needed -->
-          </div>
-    </div>
-    <!-- <footer>
-        <div>
-            <p>Copyright 2024 by Silvia Lopez</p>
-        </div>
-    </footer> -->
-
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
 </body>
 
 </html>

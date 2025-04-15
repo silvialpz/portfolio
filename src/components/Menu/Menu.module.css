@@ -1,0 +1,32 @@
+.nav {
+    padding: 2rem 4rem;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.navItem {
+    letter-spacing: 0.1rem;
+    margin: 0 3rem;
+}
+
+.navLink {
+    color: inherit;
+    font-size: large;
+    font-weight: 400;
+    text-decoration: none;
+    transition: font-weight 0.3s ease-in-out; /* Add the transition property */
+}
+
+.navLink:hover {
+    font-weight: 800;
+}
+
+.active {
+    font-weight: 800;
+}
