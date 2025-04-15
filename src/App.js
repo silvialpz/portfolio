@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Menu from './components/Menu/Menu';
+import HomePage from './components/HomePage/HomePage';
+import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import SketchbookPage from './components/SketchbookPage/SketchbookPage';
+import CVPage from './components/CVPage/CVPage';
+import './App.css'; // You can have global styles here if needed
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. Hi!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Menu />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/sketchbook" element={<SketchbookPage />} />
+            <Route path="/cv" element={<CVPage />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
