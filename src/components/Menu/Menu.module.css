@@ -11,7 +11,6 @@
 }
 
 .navItem {
-    letter-spacing: 0.1rem;
     margin: 0 3rem;
 }
 
@@ -24,9 +23,11 @@
 }
 
 .navLink:hover {
+    letter-spacing: 0.1rem;
     font-weight: 800;
 }
 
 .active {
+    letter-spacing: 0.1rem;
     font-weight: 800;
 }
