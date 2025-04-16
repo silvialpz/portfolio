@@ -24,7 +24,7 @@ function Bio() {
       </div>
 
       <div className={styles.column}>
-        <img src={headshot} alt="Your Headshot" className={styles.headshot} />
+        <img src={headshot} alt="Headshot" className={styles.headshot} />
       </div>
 
       <div className={styles.column}>
