@@ -10,7 +10,9 @@ function BigProject({ title, image, description, language, frameworks, area, res
         </h2>
       </div>
       <div className={styles.content}>
-        <img src={image} alt='Big Project' />
+        <div className={styles.projectImage}>
+          <img src={image} alt='Big Project' style={{width: 'auto'}}/>
+        </div>
         <div>
           <div>
             <p>{description}</p>
