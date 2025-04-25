@@ -6,8 +6,8 @@ import Recent from './Recent/Recent';
 function HomePage() {
   return (
     <div className={styles.homePage}>
-      <Bio/ >
       <Recent/ >
+      <Bio/ >
     </div>
   );
 }

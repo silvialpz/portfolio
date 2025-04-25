@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Recent.module.css"
-import ProjectCard from "../../ProjectCard/ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 
 import img1 from "../../../assets/sketches/merendon.jpeg"
 import img2 from "../../../assets/sketches/coco.jpeg"
