@@ -22,20 +22,6 @@
   font-size: 19px;
 }
 
-.scrollIcon {
-  /* Style your scroll icon */
-  width: 80px; /* Adjust size */
-  /* margin-top: auto; */ /* Not needed with space-between */
-  margin-top: auto;
-  position: absolute;
-  bottom: 10px;
-}
-
-.scrollIcon img {
-  width: 100%;
-  height: auto;
-}
-
 /* Second Column Styles */
 .headshot {
   height: 400px; /* Increased width */

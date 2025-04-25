@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Bio.module.css';
 import headshot from '../../../assets/images/portrait.jpg'; // Replace with your image path
-import scrollIcon from '../../../assets/icons/scroll-down.svg'; // Replace with your icon path
 import githubIcon from '../../../assets/icons/github.png'; // Replace with your icon path
 import linkedinIcon from '../../../assets/icons/linkedin.png'; // Replace with your icon path
 import resumeIcon from '../../../assets/icons/downloading.png'; // Replace with your icon path
@@ -16,11 +15,6 @@ function Bio() {
           Driven by a desire to merge technology and creativity, 
           I aspire to develop creative tools that empower and inspire artists.
         </p>
-        <div className={styles.scrollIcon}>
-          <a href="#more-content"> {/* Link to the section below */}
-            <img src={scrollIcon} alt="Scroll Down" />
-          </a>
-        </div>
       </div>
 
       <div className={styles.column}>
