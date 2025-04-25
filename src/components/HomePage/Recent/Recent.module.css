@@ -1,0 +1,18 @@
+.recentSection {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+}
+
+.title {
+  margin: 1rem 23rem 0 15rem;
+  font-weight: 500;
+  font-size: xx-large;
+
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 5rem 0 5rem;
+  padding: 9;
+}

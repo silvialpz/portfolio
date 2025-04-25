@@ -1,0 +1,36 @@
+.projectCard {
+  width: 20rem;
+  flex-direction: column; /* Arrange icons vertically */
+  padding: 1rem;
+}
+
+.date {
+  font-weight: 300;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  margin-left: 1.2rem;
+  color: #4E4793;
+  font-size: 14px;
+}
+
+.projectCard img {
+  width: inherit;
+  border-radius: 25px;
+}
+
+.title {
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  margin-left: 0.5rem;
+  font-size: 20px;
+}
+
+.description {
+  font-weight: 350;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: 0.5rem;
+  font-size: 18px;
+}

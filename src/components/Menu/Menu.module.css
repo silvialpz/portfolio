@@ -11,7 +11,6 @@
 }
 
 .navItem {
-    letter-spacing: 0.1rem;
     margin: 0 3rem;
 }
 
@@ -20,13 +19,15 @@
     font-size: large;
     font-weight: 400;
     text-decoration: none;
-    transition: font-weight 0.3s ease-in-out; /* Add the transition property */
+    transition: font-weight 0.3s ease-in-out;
 }
 
 .navLink:hover {
+    letter-spacing: 0.1rem;
     font-weight: 800;
 }
 
 .active {
+    letter-spacing: 0.1rem;
     font-weight: 800;
 }
