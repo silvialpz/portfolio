@@ -6,7 +6,7 @@ import Recent from './Recent/Recent';
 function HomePage() {
   return (
     <div className={styles.homePage}>
-      <Recent/ >
+      {/*<Recent/ >*/}
       <Bio/ >
     </div>
   );

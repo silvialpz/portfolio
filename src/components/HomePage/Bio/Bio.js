@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Bio.module.css';
-import headshot from '../../../assets/images/portrait.jpg'; // Replace with your image path
+import headshot from '../../../assets/images/lithuania.jpeg'; // Replace with your image path
 import githubIcon from '../../../assets/icons/github.png'; // Replace with your icon path
 import linkedinIcon from '../../../assets/icons/linkedin.png'; // Replace with your icon path
 import resumeIcon from '../../../assets/icons/downloading.png'; // Replace with your icon path
