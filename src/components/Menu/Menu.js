@@ -13,12 +13,12 @@ function Menu() {
         </li>
         {/*<li className={styles.navItem}>
           <Link to="/projects" className={`${styles.navLink} ${location.pathname === "/projects" ? styles.active : ''}`}>Projects</Link>
-        </li>
+        </li> */}
         <li className={styles.navItem}>
           <Link to="/cv" className={`${styles.navLink} ${location.pathname === "/cv" ? styles.active : ''}`}>CV</Link>
-        </li> */}
+        </li>
         <li className={styles.navItem}> 
-          <Link to="/sketchbook" className={`${styles.navLink} ${location.pathname === "/sketchbook" ? styles.active : ''}`}>Sketchbook</Link>
+          <Link to="/sketchbook" className={`${styles.navLink} ${location.pathname === "/sketchbook" ? styles.active : ''}`}>Art</Link>
         </li>
       </ul>
     </nav>
