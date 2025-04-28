@@ -4,17 +4,12 @@ import styles from './BigProject.module.css';
 function BigProject({ title, image, description, language, frameworks, area, responsibilities }) {
   return (
     <div class={styles.projectContainer}>
-      <div className={styles.title}>
-        <h2>
-          {title}
-        </h2>
-      </div>
       <div className={styles.content}>
-        <div className={styles.projectImage}>
-          <img src={image} alt='Big Project' style={{width: 'auto'}}/>
-        </div>
         <div>
           <div>
+            <h2>
+              {title}
+            </h2>
             <p>{description}</p>
             <div className={styles.skills}>
               <p>{language}</p>
@@ -24,7 +19,11 @@ function BigProject({ title, image, description, language, frameworks, area, res
             <p>{responsibilities}</p>
           </div>
         </div>
+        <div className={styles.projectImage}>
+          <img src={image} alt='Big Project' style={{ width: 'auto' }} />
+        </div>
       </div>
+      <div className={styles.space}></div>
     </div>
   );
 }

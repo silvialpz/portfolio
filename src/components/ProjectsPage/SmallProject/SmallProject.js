@@ -1,16 +1,13 @@
 import React from 'react';
 import styles from './SmallProject.module.css';
 
-function SmallProject({ title, image, description}) {
+function SmallProject({ title, image, description, month, year }) {
   return (
     <div class={styles.projectContainer}>
-      <div className={styles.title}>
-        <h2>
-          {title}
-        </h2>
-      </div>
       <div className={styles.content}>
-        <img src={image} alt='Small Project' />
+        <p>{month}, {year}</p>
+        <img src={image} alt='Small Project' style={{}} />
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>
