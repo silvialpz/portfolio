@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ProjectCard.module.css';
+import styles from './RecentProjectCard.module.css';
 
 function ProjectCard( {month, year, imgPath, title, description} ) {
   return (

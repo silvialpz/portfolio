@@ -2,6 +2,18 @@
   padding: 1rem;
 }
 
+.projectContainer a {
+  text-decoration: none;
+  color: inherit
+}
+
+.projectContainer:hover {
+  transition: all 0.25s ease-in-out;
+  transform: scale(1.02);
+  color: #796fcd;
+}
+
+
 .projectContainer h2 {
   font-size: 40px;
   font-weight: 900;

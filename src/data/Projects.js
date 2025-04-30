@@ -2,6 +2,7 @@ import img1 from '../assets/sketches/indura.jpeg';
 
 const bigProjects = [
   {
+    id: 'project1',
     title: 'Big Project 1',
     image: img1,
     description: 'small description of what the project is here',
@@ -13,6 +14,7 @@ const bigProjects = [
     year: 'year'
   },
   {
+    id: 'project2',
     title: 'Big Project 2',
     image: img1,
     description: 'small description of what the project is here',
@@ -24,6 +26,7 @@ const bigProjects = [
     year: 'year'
   },
   {
+    id: 'project3',
     title: 'Big Project 3',
     image: img1,
     description: 'small description of what the project is here',

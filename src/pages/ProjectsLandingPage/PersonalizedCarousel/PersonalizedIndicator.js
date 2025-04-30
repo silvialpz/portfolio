@@ -8,7 +8,7 @@ function PersonalizedIndicator(onClick, isSelected, index) {
     backgroundColor: isSelected ? '#FF7E67' : '#C4BFE0',
     cursor: 'pointer',
     border: 'none',
-    padding: 0,
+    padding: '0',
   };
 
   return (

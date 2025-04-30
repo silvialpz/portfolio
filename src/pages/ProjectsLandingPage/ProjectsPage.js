@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './ProjectsPage.module.css';
 
-import SmallProject from './SmallProject/SmallProject';
+import SmallProject from '../../components/SmallProject/SmallProject';
 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import bigProjects from '../../data/projects';
-import BigProject from './BigProject/BigProject';
+import BigProject from '../../components/BigProject/BigProject';
 
 import PersonalizedArrow from './PersonalizedCarousel/PersonalizedArrow';
 import PersonalizedIndicator from './PersonalizedCarousel/PersonalizedIndicator';
@@ -19,6 +19,7 @@ function ProjectsPage() {
         renderIndicator={(clickHandler, isSelected, index) => PersonalizedIndicator(clickHandler, isSelected, index)}>
         {bigProjects.map((item) => (
           <BigProject
+            id={item.id}
             title={item.title}
             image={item.image}
             description={item.description}
