@@ -3,10 +3,6 @@
   text-align: left;
 }
 
-.projectContainer:hover {
-  background-color: red;
-}
-
 .projectContainer p {
   padding: 0rem;
   margin: 0rem;
@@ -15,4 +11,8 @@
 .projectContainer h2 {
   padding-bottom: 0rem;
   margin-bottom: 0rem;
+}
+
+.space {
+  height: 50px;
 }

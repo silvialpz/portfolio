@@ -8,21 +8,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import bigProjects from '../../data/Projects';
 import BigProject from './BigProject/BigProject';
 
-import arrow from '../../assets/icons/arrow.svg';
-
-function personalizedArrow(clickHandler, hasNext, labelNext) {
-  return (
-      <button onClick={clickHandler} className={styles.next } type='button' style={{opacity: 1}}>
-        <img src={arrow} alt='Arrow' />
-      </button>
-  );
-}
+import PersonalizedArrow from './PersonalizedCarousel/PersonalizedArrow';
+import PersonalizedIndicator from './PersonalizedCarousel/PersonalizedIndicator';
 
 function ProjectsPage() {
   return (
     <div className={styles.projectsPage}>
-      <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false}
-      renderArrowNext={(clickHandler, hasNext, labelNext) => personalizedArrow(clickHandler, hasNext, labelNext)}>
+      <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} showArrows={false}
+      renderArrowNext={(clickHandler, hasNext, labelNext) => PersonalizedArrow(clickHandler, hasNext, labelNext)}
+      renderIndicator={(clickHandler, isSelected, index) => PersonalizedIndicator(clickHandler, isSelected, index)}>
         {bigProjects.map((item) => (
           <BigProject
             title={item.title}
@@ -36,16 +30,16 @@ function ProjectsPage() {
         ))}
       </Carousel>
 
-      <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} centerSlidePercentage={33} centerMode={true}>
+      <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} showArrows={false}
+      centerMode={true} centerSlidePercentage={33}
+      renderArrowNext={(clickHandler, hasNext, labelNext) => PersonalizedArrow(clickHandler, hasNext, labelNext)}
+      renderIndicator={(clickHandler, isSelected, index) => PersonalizedIndicator(clickHandler, isSelected, index)}
+      >
         {bigProjects.map((item) => (
           <SmallProject
             title={item.title}
             image={item.image}
             description={item.description}
-            language={item.language}
-            frameworks={item.frameworks}
-            area={item.area}
-            responsibilities={item.responsibilities}
             month={item.month}
             year={item.year}
           />

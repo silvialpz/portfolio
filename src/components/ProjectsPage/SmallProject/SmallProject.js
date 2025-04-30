@@ -9,6 +9,7 @@ function SmallProject({ title, image, description, month, year }) {
         <img src={image} alt='Small Project' style={{}} />
         <h2>{title}</h2>
         <p>{description}</p>
+        <div className={styles.space}></div>
       </div>
     </div>
   );
