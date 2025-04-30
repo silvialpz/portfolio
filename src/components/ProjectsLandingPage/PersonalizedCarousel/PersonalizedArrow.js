@@ -3,14 +3,14 @@ import styles from './PersonalizedArrow.module.css'
 
 function PersonalizedArrow(clickHandler, hasNext, labelNext) {
   return (
-      <button 
-        onClick={clickHandler}
-        type='button'
-        className={styles.next}
-        aria-label={labelNext} 
-      >
-        <img src={arrow} alt='Arrow' />
-      </button>
+    <button
+      onClick={clickHandler}
+      type='button'
+      className={styles.next}
+      aria-label={labelNext}
+    >
+      <img src={arrow} alt='Arrow' />
+    </button>
   );
 }
 

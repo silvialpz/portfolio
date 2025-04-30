@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
 import HomePage from './components/HomePage/HomePage';
-import ProjectsPage from './components/ProjectsPage/ProjectsPage';
+import ProjectsPage from './components/ProjectsLandingPage/ProjectsPage';
 import SketchbookPage from './components/SketchbookPage/SketchbookPage';
 import CVPage from './components/CVPage/CVPage';
 import './App.css'; // You can have global styles here if needed
