@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: "goldich", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  /* background-color: #e2e0f2; Your chosen background color */
+  /* color: #2f22ab; Your chosen text color */
+  line-height: 1.6; /* Improve readability for body text */
+  -webkit-font-smoothing: antialiased; /* Smoother font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Smoother font rendering */
+}
+
+.serif-title-text {
+font-family: alegreya, serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.serif-text {
+  font-family: alegreya, serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.serif-heading {
+  font-family: alegreya, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--text-lg);
+}
+
+.sans-serif-subtitle-text {
+font-family: source-code-pro, monospace;
+font-weight: 600;
+font-style: normal;
+}
+
+.sans-serif-small-text {
+font-family: source-code-pro, monospace;
+font-weight: 400;
+font-style: italic;
+}
+
+.sans-serif-label-text {
+font-family: source-code-pro, monospace;
+font-weight: 900;
+font-style: italic;
+}
+
+/* Apply lowercase transformation to most text elements globally */
+/* We will explicitly override this for 'SILVIA LOPEZ' in the HTML */
+/* p, h2, h3, h4, h5, h6, a, span, div {
+  text-transform: lowercase;
+} */
